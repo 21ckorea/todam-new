@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  transpilePackages: ['framer-motion'],
   images: {
     remotePatterns: [
       {
@@ -7,6 +8,7 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+    domains: ['images.unsplash.com'],
   },
 }
 
