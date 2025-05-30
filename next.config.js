@@ -1,11 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['framer-motion'],
-  modularizeImports: {
-    'framer-motion': {
-      transform: 'framer-motion/dist/es/{{member}}'
-    }
-  },
   images: {
     remotePatterns: [
       {
@@ -14,6 +8,9 @@ const nextConfig = {
       },
     ],
     domains: ['images.unsplash.com'],
+  },
+  experimental: {
+    esmExternals: 'loose'
   }
 }
 
