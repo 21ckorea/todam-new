@@ -10,8 +10,9 @@ const nextConfig = {
     domains: ['images.unsplash.com'],
   },
   experimental: {
-    esmExternals: 'loose'
-  }
+    esmExternals: true
+  },
+  transpilePackages: ['framer-motion']
 }
 
 module.exports = nextConfig 
